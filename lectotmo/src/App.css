@@ -297,3 +297,35 @@ footer .container-footer .footer-content p {
   font-size: .875rem;
   margin-bottom: 16px;
 }
+
+.searchAdvanced {
+  display: flex;
+  flex-direction: column;
+}
+
+.searchAdvanced .search-filter {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.searchAdvanced .search-filter input, select, button {
+  padding: 6px 12px;
+  border-radius: 2px;
+  background-clip: padding-box;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  margin-right: 5px;
+  height: 40px;
+}
+
+.searchAdvanced .search-filter button {
+  background: var(--primary);
+  color: var(--header);
+}
+
+.searchAdvanced  .filters {
+  display: flex;
+  color: #ccd0d2;
+}
+
