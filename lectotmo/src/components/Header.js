@@ -1,16 +1,19 @@
+import { Link } from "react-router-dom";
+import routers from "../helper/Routers";
+
 const Header = () => {
   return (
     <header class="container">
       <nav class="navbar">
         <div class="main-menu">
-          <a href="">
+          <Link to={routers.home}>
             tu<b>manga</b>
             <i>online</i>
-          </a>
-          <a href="">biblioteca</a>
-          <a href="">grupos</a>
-          <a href="">listas</a>
-          <a href="">foro</a>
+          </Link>
+          <Link to={routers.library}>biblioteca</Link>
+          <Link href="">grupos</Link>
+          <Link href="">listas</Link>
+          <Link href="">foro</Link>
         </div>
         <div class="main-menu">
           <form autocomplete="off">
