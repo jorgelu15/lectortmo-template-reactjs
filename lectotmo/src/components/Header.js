@@ -11,7 +11,7 @@ const Header = () => {
             <i>online</i>
           </Link>
           <Link to={routers.library}>biblioteca</Link>
-          <Link href="">grupos</Link>
+          <Link to={routers.groups}>grupos</Link>
           <Link href="">listas</Link>
           <Link href="">foro</Link>
         </div>

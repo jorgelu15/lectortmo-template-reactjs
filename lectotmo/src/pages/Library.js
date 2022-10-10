@@ -1,4 +1,6 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
+import MangasFounded from "../components/MangasFounded";
 import SearchAdvanced from "../components/SearchAdvanced";
 
 const Library = () => {
@@ -6,8 +8,12 @@ const Library = () => {
     <>
       <Header />
       <div className="container">
-        <SearchAdvanced />
+        <div className="mangasFounded">
+          <SearchAdvanced />
+          <MangasFounded />
+        </div>
       </div>
+      <Footer />
     </>
   );
 };

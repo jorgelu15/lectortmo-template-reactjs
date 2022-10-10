@@ -76,6 +76,13 @@ header .navbar .main-menu input {
   margin-right: 10px;
 }
 
+.container .main-founded {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 10px;
+}
+
 .hottest {
   display: flex;
   flex-direction: column;
@@ -405,7 +412,6 @@ footer .container-footer .footer-content p {
   }
 }
 
-
 .search-advanced .genders h3 {
   margin: 0 0 10px 0;
   padding: 0 12px 5px 12px;
@@ -421,7 +427,6 @@ footer .container-footer .footer-content p {
   width: 100%;
   list-style: none;
   float: left;
-  
 }
 
 .search-advanced .genders ul li {
@@ -434,7 +439,7 @@ footer .container-footer .footer-content p {
 .search-advanced .genders ul li a {
   padding: 5px 10px;
   font-size: 15px;
-  transition: .4s;
+  transition: 0.4s;
   font-weight: 700;
 }
 
@@ -444,4 +449,114 @@ footer .container-footer .footer-content p {
   border-bottom-color: transparent;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.container .mangasFounded {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container .mangasFounded main .mangasFounded-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .mangasFounded main .mangasFounded-list .list-mangasFounded {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+}
+
+.container
+  .mangasFounded
+  main
+  .mangasFounded-list
+  .list-mangasFounded
+  .list-mangasFounded__list {
+  display: flex;
+  width: 100%;
+  flex: none;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.container
+  .mangasFounded
+  main
+  .mangasFounded-list
+  .list-mangasFounded
+  .list-mangasFounded__list
+  .card-mangasFounded {
+  position: relative;
+  background-color: #222222;
+  width: 16%;
+  padding: 0;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container
+  .mangasFounded
+  main
+  .mangasFounded-list
+  .list-mangasFounded
+  .list-mangasFounded__list
+  .card-mangasFounded
+  .title-card__mangasFounded {
+  position: absolute;
+  width: 100%;
+  background-color: #343a40c4;
+  color: var(--header);
+  padding: 5px;
+  text-overflow: ellipsis;
+  top: 0;
+}
+
+.container
+  .mangasFounded
+  main
+  .mangasFounded-list
+  .list-mangasFounded
+  .list-mangasFounded__list
+  .card-mangasFounded
+  img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.container
+  .mangasFounded
+  main
+  .mangasFounded-list
+  .list-mangasFounded
+  .list-mangasFounded__list
+  .card-mangasFounded
+  .type-card__mangasFounded {
+  position: absolute;
+  width: 100%;
+  background-color: #d9ff009f;
+  padding: 5px;
+  text-overflow: ellipsis;
+  bottom: 0;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.container
+  .mangasFounded
+  main
+  .mangasFounded-list
+  .list-mangasFounded
+  .btn-see-more {
+  background-color: var(--primary);
+  color: var(--header);
+  width: 20%;
+  text-align: center;
+  padding: 8px 16px;
+  border-radius: 2px;
 }

@@ -1,6 +1,7 @@
 const routers = {
     home: '/',
-    library: '/library'
+    library: '/library',
+    groups: '/groups'
 }
 
 export default routers;
