@@ -3,7 +3,7 @@ const routers = {
     library: '/library',
     groups: '/groups',
     login: '/login',
-    logUp: '/logUp'
+    logUp: '/logup'
 }
 
 export default routers;
