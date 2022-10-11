@@ -8,8 +8,8 @@ const ListGenders = (props) => {
     >
       <h3>Mangas por género:</h3>
       <ul>
-        {Genders.map((gender) => (
-          <li>
+        {Genders.map((gender, idx) => (
+          <li key={idx}>
             <a>{gender}</a>
           </li>
         ))}

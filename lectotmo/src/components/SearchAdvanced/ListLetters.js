@@ -2,8 +2,8 @@ import { Letters } from "../../data/Letters";
 const ListLetters = () => {
   return (
     <>
-      {Letters.map((letter) => (
-        <a>{letter}</a>
+      {Letters.map((letter, idx) => (
+        <a key={idx}>{letter}</a>
       ))}
     </>
   );
