@@ -153,8 +153,15 @@ header .navbar .main-menu input {
   width: 100%;
   background-color: #343a40c4;
   padding: 5px;
-  text-overflow: ellipsis;
   top: 0;
+}
+
+.hottest .list-hottest__list .card-hottest .title-card__hottest p {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
 }
 
 .hottest .list-hottest__list .card-hottest img {

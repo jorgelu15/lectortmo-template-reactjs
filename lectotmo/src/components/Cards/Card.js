@@ -1,14 +1,13 @@
-import foto from '../img/foto1.jpg';
+const Card = ({manga, ...props}) => {
 
-const Card = () => {
   return (
     <a class="card-hottest">
       <div class="title-card__hottest">
-        <p>Shuumatsu no Valkire</p>
+        <p>{manga.name}</p>
       </div>
-      <img src={foto} />
+      <img src={manga.thumb} />
       <div class="type-card__hottest">
-        <p>SEINEN</p>
+        <p>{manga.type}</p>
       </div>
     </a>
   );

@@ -5,7 +5,7 @@ const Groups = () => {
   return (
     <>
       <Header />
-      <div className="contaienr"></div>
+      <div className="container"></div>
       <Footer />
     </>
   );

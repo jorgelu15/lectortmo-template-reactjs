@@ -1,7 +1,7 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import MangasFounded from "../components/MangasFounded";
-import SearchAdvanced from "../components/SearchAdvanced";
+import SearchAdvanced from "../components/SearchAdvanced/SearchAdvanced";
 
 const Library = () => {
   return (

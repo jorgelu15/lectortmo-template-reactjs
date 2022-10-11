@@ -1,7 +1,7 @@
-import Card from "./Card";
+import Card from "./Cards/Card";
+import { Mangas } from "../data/Mangas";
 
 const Main = () => {
-  const array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
   return (
     <main>
       <section class="hottest">
@@ -12,8 +12,8 @@ const Main = () => {
         </div>
         <div class="list-hottest">
           <div class="list-hottest__list">
-            {array.map((item, idx) => (
-              <Card key={idx} />
+            {Mangas.map((manga, idx) => (
+              <Card key={idx} manga={manga} />
             ))}
           </div>
           <a>Ver Todo</a>
@@ -23,8 +23,8 @@ const Main = () => {
         <h1>Ultimos añadidos</h1>
         <div class="list-hottest">
           <div class="list-hottest__list">
-            {array.map((item, idx) => (
-              <Card key={idx} />
+            {Mangas.map((manga, idx) => (
+              <Card key={idx} manga={manga} />
             ))}
           </div>
         </div>
@@ -33,8 +33,8 @@ const Main = () => {
         <h1>Ultimas Subidas</h1>
         <div class="list-hottest">
           <div class="list-hottest__list">
-            {array.map((item, idx) => (
-              <Card key={idx} />
+            {Mangas.map((manga, idx) => (
+              <Card key={idx} manga={manga} />
             ))}
           </div>
           <a>Ver todos</a>
