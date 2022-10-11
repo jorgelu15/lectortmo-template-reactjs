@@ -113,13 +113,13 @@ header .navbar .main-menu input {
   color: var(--header);
 }
 
-.hottest .list-hottest {
+.list-hottest {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.hottest .list-hottest a {
+.list-hottest a {
   background-color: var(--primary);
   color: var(--header);
   width: 20%;
@@ -128,7 +128,7 @@ header .navbar .main-menu input {
   border-radius: 2px;
 }
 
-.hottest .list-hottest__list {
+.list-hottest__list {
   display: flex;
   width: 100%;
   flex: none;
@@ -138,7 +138,7 @@ header .navbar .main-menu input {
   margin: 8px 0;
 }
 
-.hottest .list-hottest__list .card-hottest {
+.list-hottest__list .card-hottest {
   position: relative;
   background-color: #222222;
   width: 16%;
@@ -148,7 +148,7 @@ header .navbar .main-menu input {
   align-items: center;
 }
 
-.hottest .list-hottest__list .card-hottest .title-card__hottest {
+.list-hottest__list .card-hottest .title-card__hottest {
   position: absolute;
   width: 100%;
   background-color: #343a40c4;
@@ -156,7 +156,7 @@ header .navbar .main-menu input {
   top: 0;
 }
 
-.hottest .list-hottest__list .card-hottest .title-card__hottest p {
+.list-hottest__list .card-hottest .title-card__hottest p {
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -164,7 +164,7 @@ header .navbar .main-menu input {
   text-align: left;
 }
 
-.hottest .list-hottest__list .card-hottest img {
+.list-hottest__list .card-hottest img {
   width: 100%;
   object-fit: cover;
 }
@@ -458,101 +458,6 @@ footer .container-footer .footer-content p {
   cursor: pointer;
 }
 
-.container .mangasFounded {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.container .mangasFounded main .mangasFounded-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.container .mangasFounded main .mangasFounded-list .list-mangasFounded {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  align-items: center;
-}
-
-.container
-  .mangasFounded
-  main
-  .mangasFounded-list
-  .list-mangasFounded
-  .list-mangasFounded__list {
-  display: flex;
-  width: 100%;
-  flex: none;
-  flex-wrap: wrap;
-  margin: auto;
-  justify-content: space-between;
-  margin: 8px 0;
-}
-
-.container
-  .mangasFounded
-  main
-  .mangasFounded-list
-  .list-mangasFounded
-  .list-mangasFounded__list
-  .card-mangasFounded {
-  position: relative;
-  background-color: #222222;
-  width: 16%;
-  padding: 0;
-  margin-bottom: 5px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.container
-  .mangasFounded
-  main
-  .mangasFounded-list
-  .list-mangasFounded
-  .list-mangasFounded__list
-  .card-mangasFounded
-  .title-card__mangasFounded {
-  position: absolute;
-  width: 100%;
-  background-color: #343a40c4;
-  color: var(--header);
-  padding: 5px;
-  text-overflow: ellipsis;
-  top: 0;
-}
-
-.container
-  .mangasFounded
-  main
-  .mangasFounded-list
-  .list-mangasFounded
-  .list-mangasFounded__list
-  .card-mangasFounded
-  img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.container
-  .mangasFounded
-  main
-  .mangasFounded-list
-  .list-mangasFounded
-  .list-mangasFounded__list
-  .card-mangasFounded
-  .type-card__mangasFounded {
-  position: absolute;
-  width: 100%;
-  background-color: #d9ff009f;
-  padding: 5px;
-  text-overflow: ellipsis;
-  bottom: 0;
-  text-shadow: 1px 1px 0 #000;
-}
 
 .container
   .mangasFounded
