@@ -21,8 +21,8 @@ const Header = () => {
               <input type="search" placeholder="Buscar..." name="q" id="q" />
             </div>
           </form>
-          <a href="">acceder</a>
-          <a href="">registrar</a>
+          <Link to={routers.login}>acceder</Link>
+          <Link to={routers.logUp}>registrar</Link>
         </div>
       </nav>
     </header>
