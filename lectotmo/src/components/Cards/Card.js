@@ -1,13 +1,15 @@
-const Card = ({manga, ...props}) => {
-
+const Card = ({file, ...props}) => {
+  const cardStyle = {
+    width: `${file.type == 'shounen' ? 24 : 16}%`,
+  }
   return (
-    <a class="card-hottest">
+    <a className="card-hottest" style={cardStyle}>
       <div class="title-card__hottest">
-        <p>{manga.name}</p>
+        <p>{file.name}</p>
       </div>
-      <img src={manga.thumb} />
+      <img src={file.thumb} />
       <div class="type-card__hottest">
-        <p>{manga.type}</p>
+        <p>{file.type}</p>
       </div>
     </a>
   );

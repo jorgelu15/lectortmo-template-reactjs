@@ -1,5 +1,5 @@
 import { Groups } from "../../data/Groups";
-import GroupCard from "../Cards/GroupCard";
+import Card from "../Cards/Card";
 
 const MyGroups = () => {
   return (
@@ -8,14 +8,12 @@ const MyGroups = () => {
       <div className="groups-content">
         <div className="list-groups">
           <section class="hottest">
-            <div class="list">
-              <div class="list-hottest__list">
-                {Groups.map((group, idx) => (
-                  <GroupCard key={idx} group={group} />
-                ))}
-              </div>
-              <a className="btn-see-more">Mostrar más</a>
+            <div class="list-hottest__list">
+              {Groups.map((group, idx) => (
+                <Card key={idx} file={group} />
+              ))}
             </div>
+            <a className="btn-see-more">Mostrar más</a>
           </section>
         </div>
         <div></div>
