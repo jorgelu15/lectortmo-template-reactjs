@@ -472,3 +472,116 @@ footer .container-footer .footer-content p {
   padding: 8px 16px;
   border-radius: 2px;
 }
+
+/* estilos login */
+.content-login{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-form{
+  min-width: 458px;
+  min-height: 500px;
+  background-color: var(--navbar);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.content-form form{
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--header);
+  width: 100%;
+}
+
+.content-form form .logo{
+  color: var(--title);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.content-form form .acceder{
+  font-size: 1.4rem;
+  margin: 15px 0;
+}
+
+.content-form form a{
+  color: var(--header);
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.content-form form a:hover{
+  text-decoration: underline;
+}
+
+.content-form form .input{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5px 0;
+}
+.content-form form .input label{
+  color: var(--title);
+}
+
+.content-form form input{
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  padding: 5px;
+}
+.content-form form .recuperar-contraseña{
+  color: var(--primary);
+  margin-top: 5px;
+}
+
+.content-form form .link-footer{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.content-form form .link-footer input{
+  width: 109px;
+  height: 42px;
+  background-color: var(--primary);
+  color: var(--header);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+.content-form .login-redes{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn{
+  width: 200px;
+  height: 42px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.content-form .login-redes .f{
+  background-color: var(--primary);
+  color: var(--header);
+  font-size: 1.2rem;
+}
+
+.content-form form .contra{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+}
