@@ -13,6 +13,7 @@
   --icons: #f89406;
   --title: #4a77ef;
   --navbar: #343a40;
+  --cover-bg: #3b4148;
 }
 
 body {
@@ -88,7 +89,7 @@ header .navbar .main-menu input {
   flex-direction: column;
 }
 
-.hottest h1 {
+h1 {
   color: var(--title);
   font-weight: 400;
   font-size: 35px;
@@ -411,11 +412,11 @@ footer .container-footer .footer-content p {
 @keyframes slideGenderClose {
   0% {
     opacity: 1;
-    transform: scaleY(1);
+    height: 100%;
   }
-  to {
+  50% {
     opacity: 0;
-    transform: scaleY(1.3);
+    height: 0px;
   }
 }
 
@@ -471,6 +472,123 @@ footer .container-footer .footer-content p {
   background-color: var(--primary);
   color: var(--header);
   width: 20%;
+  text-align: center;
+  padding: 8px 16px;
+  border-radius: 2px;
+}
+
+.cover {
+  width: 100%;
+  background-color: var(--cover-bg);
+}
+
+.cover-url {
+  background-color: #242538;
+  background-position: 50% 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 330px;
+  position: relative;
+}
+
+.cover-url .shadow {
+  background: linear-gradient(
+    180deg,
+    rgba(34, 34, 34, 0) 40%,
+    rgba(34, 34, 34, 0.6)
+  );
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.container-picture {
+  max-width: 1140px;
+  display: flex;
+  height: 100%;
+  padding: 0 50px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.banner-content {
+  align-items: flex-end;
+  display: flex;
+  width: 100%;
+}
+
+.banner-content img {
+  border-radius: 4px 4px 0 0;
+  display: inline-block;
+  max-height: 230px;
+  max-width: 160px;
+  width: 100%;
+}
+
+.title-profile {
+  padding: 22px 25px;
+  display: inline-block;
+  font-weight: 800;
+  color: var(--header);
+  font-size: 1.3rem;
+}
+
+.main-actions {
+  background: var(--navbar);
+  width: 100%;
+}
+
+.main-actions-container {
+  font-size: 16px;
+  max-width: 1220px;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0 auto;
+}
+
+.main-actions-container a {
+  color: var(--header);
+  display: inline-block;
+  margin: 0 10px;
+  padding: 15px;
+}
+
+.myGroups-container {
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 50px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.groups-content {
+  display: flex;
+  width: 100%;
+}
+
+.groups-content .list-groups {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin-right: 10px;
+}
+
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list a {
+  background-color: var(--primary);
+  color: var(--header);
+  width: 32% !important;
   text-align: center;
   padding: 8px 16px;
   border-radius: 2px;

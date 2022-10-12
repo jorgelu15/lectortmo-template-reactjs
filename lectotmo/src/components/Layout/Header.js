@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import routers from "../helper/Routers";
+import routers from "../../helper/Routers";
 
 const Header = () => {
   return (
@@ -12,8 +12,6 @@ const Header = () => {
           </Link>
           <Link to={routers.library}>biblioteca</Link>
           <Link to={routers.groups}>grupos</Link>
-          <Link href="">listas</Link>
-          <Link href="">foro</Link>
         </div>
         <div className="main-menu">
           <form autoComplete="off">

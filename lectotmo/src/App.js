@@ -4,6 +4,7 @@ import routers from "./helper/Routers";
 import Groups from "./pages/Groups";
 import Home from "./pages/Home";
 import Library from "./pages/Library";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path={routers.home} element={<Home />} />
         <Route path={routers.library} element={<Library />} />
         <Route path={routers.groups} element={<Groups />} />
+        <Route path={routers.profile} element={<Profile />} />
       </Routes>
     </BrowserRouter>
   );

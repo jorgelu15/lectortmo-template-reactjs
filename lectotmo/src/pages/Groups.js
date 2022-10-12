@@ -1,5 +1,5 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Footer from "../components/Layout/Footer";
+import Header from "../components/Layout/Header";
 import SearchAdvanced from "../components/SearchAdvanced/SearchAdvanced";
 import TypeFilter from "../components/SearchAdvanced/TypeFilter";
 import FilterGroups from "../components/SearchAdvanced/FilterGroups";

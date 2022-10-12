@@ -4,7 +4,7 @@ const ListGenders = (props) => {
   return (
     <div
       className={open ? "genders slideGenderOpen" : "genders slideGenderClose"}
-      style={open ? { display: "flex" } : { display: "none" }}
+      style={open ? { display: "block" } : { display: 'none' }}
     >
       <h3>Mangas por género:</h3>
       <ul>
