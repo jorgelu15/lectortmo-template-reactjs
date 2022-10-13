@@ -13,7 +13,7 @@ const Main = () => {
         <div class="list-hottest">
           <div class="list-hottest__list">
             {Mangas.map((manga, idx) => (
-              <Card key={idx} manga={manga} />
+              <Card key={idx} file={manga} />
             ))}
           </div>
           <a>Ver Todo</a>
@@ -24,7 +24,7 @@ const Main = () => {
         <div class="list-hottest">
           <div class="list-hottest__list">
             {Mangas.map((manga, idx) => (
-              <Card key={idx} manga={manga} />
+              <Card key={idx} file={manga} />
             ))}
           </div>
         </div>
@@ -34,7 +34,7 @@ const Main = () => {
         <div class="list-hottest">
           <div class="list-hottest__list">
             {Mangas.map((manga, idx) => (
-              <Card key={idx} manga={manga} />
+              <Card key={idx} file={manga} />
             ))}
           </div>
           <a>Ver todos</a>

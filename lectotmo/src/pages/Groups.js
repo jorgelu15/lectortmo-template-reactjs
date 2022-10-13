@@ -8,7 +8,7 @@ import { useOpen } from "../hooks/useOpen";
 import GroupsFounded from "../components/GroupsFounded";
 
 const Groups = () => {
-  const { open, setopen } = useOpen();
+  const { open } = useOpen();
   return (
     <>
       <Header />

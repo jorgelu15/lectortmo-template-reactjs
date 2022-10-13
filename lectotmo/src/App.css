@@ -25,6 +25,21 @@ a {
   outline: none;
 }
 
+.btn {
+  padding: 0 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-group {
+  background-color: var(--icons);
+  color: var(--header);
+}
+
 .container {
   display: flex;
   max-width: 100%;
@@ -87,6 +102,7 @@ header .navbar .main-menu input {
 .hottest {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 h1 {
@@ -130,23 +146,30 @@ h1 {
 }
 
 .list-hottest__list {
-  display: flex;
   width: 100%;
   flex: none;
+  margin: 8px auto;
+  display: flex;
   flex-wrap: wrap;
-  margin: auto;
   justify-content: space-between;
-  margin: 8px 0;
+  align-items: center;
 }
 
 .list-hottest__list .card-hottest {
   position: relative;
   background-color: #222222;
-  width: 16%;
+  width: 12%;
   padding: 0;
+  margin: auto;
   margin-bottom: 5px;
+
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.list-hottest__list .card-hottest:last-child {
+  margin-right: auto;
 }
 
 .list-hottest__list .card-hottest .title-card__hottest {
@@ -463,18 +486,121 @@ footer .container-footer .footer-content p {
   width: 100%;
 }
 
-.container
-  .mangasFounded
-  main
-  .mangasFounded-list
-  .list-mangasFounded
-  .btn-see-more {
+.btn-see-more {
   background-color: var(--primary);
   color: var(--header);
   width: 20%;
   text-align: center;
   padding: 8px 16px;
   border-radius: 2px;
+  align-self: center;
+  margin-bottom: 16px;
+}
+
+/* estilos login */
+.content-login {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-form {
+  min-width: 458px;
+  min-height: 500px;
+  background-color: var(--navbar);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.content-form form {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--header);
+  width: 100%;
+}
+
+.content-form form .logo {
+  color: var(--title);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.content-form form .acceder {
+  font-size: 1.4rem;
+  margin: 15px 0;
+}
+
+.content-form form a {
+  color: var(--header);
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.content-form form a:hover {
+  text-decoration: underline;
+}
+
+.content-form form .input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5px 0;
+}
+.content-form form .input label {
+  color: var(--title);
+}
+
+.content-form form input {
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  padding: 5px;
+}
+.content-form form .recuperar-contraseña {
+  color: var(--primary);
+  margin-top: 5px;
+}
+
+.content-form form .link-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.content-form form .link-footer input {
+  width: 109px;
+  height: 42px;
+  background-color: var(--primary);
+  color: var(--header);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.content-form .login-redes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  width: 200px;
+  height: 42px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.content-form form .contra {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 /* estilos login */
@@ -680,22 +806,6 @@ footer .container-footer .footer-content p {
 .groups-content .list-groups {
   display: flex;
   flex-direction: column;
-  width: 75%;
+  width: 100%;
   margin-right: 10px;
-}
-
-
-.list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.list a {
-  background-color: var(--primary);
-  color: var(--header);
-  width: 32% !important;
-  text-align: center;
-  padding: 8px 16px;
-  border-radius: 2px;
 }
