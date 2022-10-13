@@ -4,7 +4,10 @@ import Card from "../Cards/Card";
 const MyGroups = () => {
   return (
     <div className="myGroups-container">
-      <h1>Mis Grupos</h1>
+      <div style={{display: 'flex', justifyContent: 'space-between', alignItem: 'center'}}>
+        <h1>Mis Grupos</h1>
+        <div className="btn btn-group" style={{marginTop: '16px'}}>Crear Grupo</div>
+      </div>
       <div className="groups-content">
         <div className="list-groups">
           <section class="hottest">

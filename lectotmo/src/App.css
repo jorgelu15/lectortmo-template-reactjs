@@ -25,6 +25,21 @@ a {
   outline: none;
 }
 
+.btn {
+  padding: 0 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-group {
+  background-color: var(--icons);
+  color: var(--header);
+}
+
 .container {
   display: flex;
   max-width: 100%;
@@ -87,6 +102,7 @@ header .navbar .main-menu input {
 .hottest {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 h1 {
@@ -146,11 +162,11 @@ h1 {
   padding: 0;
   margin: auto;
   margin-bottom: 5px;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 .list-hottest__list .card-hottest:last-child {
   margin-right: auto;
@@ -470,22 +486,19 @@ footer .container-footer .footer-content p {
   width: 100%;
 }
 
-.container
-  .mangasFounded
-  main
-  .mangasFounded-list
-  .list-mangasFounded
-  .btn-see-more {
+.btn-see-more {
   background-color: var(--primary);
   color: var(--header);
   width: 20%;
   text-align: center;
   padding: 8px 16px;
   border-radius: 2px;
+  align-self: center;
+  margin-bottom: 16px;
 }
 
 /* estilos login */
-.content-login{
+.content-login {
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -493,7 +506,7 @@ footer .container-footer .footer-content p {
   align-items: center;
 }
 
-.content-form{
+.content-form {
   min-width: 458px;
   min-height: 500px;
   background-color: var(--navbar);
@@ -501,7 +514,7 @@ footer .container-footer .footer-content p {
   padding: 1rem;
 }
 
-.content-form form{
+.content-form form {
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
@@ -510,56 +523,56 @@ footer .container-footer .footer-content p {
   width: 100%;
 }
 
-.content-form form .logo{
+.content-form form .logo {
   color: var(--title);
   font-size: 1.4rem;
   text-transform: uppercase;
 }
 
-.content-form form .acceder{
+.content-form form .acceder {
   font-size: 1.4rem;
   margin: 15px 0;
 }
 
-.content-form form a{
+.content-form form a {
   color: var(--header);
   margin-bottom: 15px;
   font-size: 1.1rem;
 }
 
-.content-form form a:hover{
+.content-form form a:hover {
   text-decoration: underline;
 }
 
-.content-form form .input{
+.content-form form .input {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin: 5px 0;
 }
-.content-form form .input label{
+.content-form form .input label {
   color: var(--title);
 }
 
-.content-form form input{
+.content-form form input {
   height: 50px;
   border-radius: 4px;
   border: none;
   padding: 5px;
 }
-.content-form form .recuperar-contraseña{
+.content-form form .recuperar-contraseña {
   color: var(--primary);
   margin-top: 5px;
 }
 
-.content-form form .link-footer{
+.content-form form .link-footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-top: 10px;
 }
 
-.content-form form .link-footer input{
+.content-form form .link-footer input {
   width: 109px;
   height: 42px;
   background-color: var(--primary);
@@ -568,14 +581,14 @@ footer .container-footer .footer-content p {
   cursor: pointer;
 }
 
-.content-form .login-redes{
+.content-form .login-redes {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-top: 10px;
 }
 
-.btn{
+.btn {
   width: 200px;
   height: 42px;
   border: none;
@@ -583,7 +596,7 @@ footer .container-footer .footer-content p {
   cursor: pointer;
 }
 
-.content-form form .contra{
+.content-form form .contra {
   display: flex;
   width: 100%;
   justify-content: space-between;

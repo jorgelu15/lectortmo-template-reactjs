@@ -1,6 +1,10 @@
+import { useLocation } from "react-router-dom";
+
 const Card = ({file, ...props}) => {
+  const location = useLocation();
+  console.log(location.pathname)
   const cardStyle = {
-    width: `${file.type == 'shounen' ? 24 : 16}%`,
+    width: `${file.type != 'shounen' && location.pathname == '/profile/12' ? 24 : 16}%`,
   }
   return (
     <a className="card-hottest" style={cardStyle}>
