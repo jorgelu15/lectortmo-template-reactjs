@@ -7,6 +7,7 @@ import Library from "./pages/Library";
 import LogIn from "./pages/LogIn";
 import LogUp from "./pages/LogUp";
 import Profile from "./pages/Profile";
+import Serie from "./pages/Serie";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path={routers.login} element={<LogIn />} />
         <Route path={routers.logUp} element={<LogUp />} />
         <Route path={routers.profile} element={<Profile />} />
+        <Route path={routers.serie} element={<Serie />} />
       </Routes>
     </BrowserRouter>
   );
