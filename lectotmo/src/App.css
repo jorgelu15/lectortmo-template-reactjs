@@ -870,9 +870,8 @@ footer .container-footer .footer-content p {
 }
 
 .content-serie {
-  max-width: 1140px;
   display: flex;
-  justify-content: space-between;
+  max-width: 1140px;
   height: 100%;
   padding: 0 50px;
   margin: 0 auto;
@@ -882,21 +881,26 @@ footer .container-footer .footer-content p {
 
 .content-serie .description-serie {
   flex: 0 0 300px;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--navbar);
+  max-width: 300px;
+}
+
+.content-serie .description-serie .desc {
+  display: block;
   margin: 10px 0;
   border-radius: 3px;
   padding: 25px;
   color: var(--header);
+  background-color: var(--navbar);
 }
 
 .content-serie .list-chapters {
   flex: 0 0 calc(100% - 310px);
+  max-width: calc(100% - 310px);
   display: flex;
   flex-direction: column;
   background-color: var(--navbar);
   margin: 10px 0;
+  margin-left: auto;
   border-radius: 3px;
   padding: 25px;
   color: var(--header);

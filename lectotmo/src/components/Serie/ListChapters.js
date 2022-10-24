@@ -1,8 +1,32 @@
+import { useState } from "react";
 import { useOrder } from "../../hooks/useOrder";
 
 const ListChapters = (props) => {
   const { chapters } = props;
   const { items, handleOrder } = useOrder(chapters);
+
+
+  const [caps, setcaps] = useState({
+    chapters: items
+  })
+
+  const [q, setq] = useState({
+    q_chapter: "",
+  });
+
+  const { q_chapter } = q;
+  
+  const onChange = e => {
+    setq({
+      ...q,
+      [e.target.name]: e.target.value
+    });
+    setcaps({
+      ...caps,
+      chapters: caps.chapters.filter(item => item.name.includes(q_chapter))
+    })    
+  }
+
   return (
     <>
       <div className="list-chapters">
@@ -16,12 +40,12 @@ const ListChapters = (props) => {
           <p className="title">Lista de Capitulos</p>
           <div>
             <span onClick={() => handleOrder()}>ASC/DESC</span>
-            <input type="text" name="q_chapter" placeholder="Filtrar..." />
+            <input type="text" name="q_chapter" value={q_chapter} onChange={onChange} placeholder="Filtrar..." />
           </div>
         </div>
         <div className="chapters">
-          {items.map((chapter) => (
-            <a className="chapter">
+          {caps.chapters.map((chapter, idx) => (
+            <a className="chapter" key={idx}>
               <p>Capítulo: {chapter.name}</p>
               <p>Fecha de publicacion: {chapter.datePost}</p>
             </a>

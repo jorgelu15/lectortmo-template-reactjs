@@ -25,14 +25,16 @@ const Serie = () => {
       </Cover>
       <Description>
         <Information>
-          <Badges genres={Mangas[0].genres} />
-          <p className="title">Estado</p>
-          <span style={{position: 'relative', marginBottom: 10}}>
-            <span class="icon-red-dot"></span>
-            <span style={{marginLeft: 15}}>{Mangas[0].status}</span>
-          </span>
-          <p className="title">Tipo</p>
-          <p style={{marginBottom: 10}}>{Mangas[0].type}</p>
+          <div className="desc">
+            <Badges genres={Mangas[0].genres} />
+            <p className="title">Estado</p>
+            <div style={{ position: "relative", marginBottom: 10 }}>
+              <span class="icon-red-dot"></span>
+              <span style={{ marginLeft: 15 }}>{Mangas[0].status}</span>
+            </div>
+            <p className="title">Tipo</p>
+            <p style={{ marginBottom: 10 }}>{Mangas[0].type}</p>
+          </div>
         </Information>
         <ListChapters chapters={Chapters} />
       </Description>
