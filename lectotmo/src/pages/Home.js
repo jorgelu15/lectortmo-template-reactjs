@@ -1,7 +1,7 @@
-import Aside from "../components/Aside";
+import Aside from "../components/Layout/Aside";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
-import Main from "../components/Main";
+import Main from "../components/Home/Main";
 
 const Home = () => {
   return (

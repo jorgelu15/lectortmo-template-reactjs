@@ -5,7 +5,7 @@ import TypeFilter from "../components/SearchAdvanced/TypeFilter";
 import FilterGroups from "../components/SearchAdvanced/FilterGroups";
 import ListGenders from "../components/SearchAdvanced/ListGenders";
 import { useOpen } from "../hooks/useOpen";
-import GroupsFounded from "../components/GroupsFounded";
+import GroupsFounded from "../components/Layout/GroupsFounded";
 
 const Groups = () => {
   const { open } = useOpen();

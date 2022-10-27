@@ -5,7 +5,8 @@ const routers = {
     login: '/login',
     logUp: '/logup',
     profile: '/profile/:id',
-    serie: '/serie/:id'
+    serie: '/serie/:id',
+    read: '/read/:id'
 }
 
 export default routers;

@@ -25,7 +25,7 @@ const SignIn = () => {
     <>
       <div className='content-login'>
         <div className='content-form'>
-          <form onSubmit={onsubmit}>
+          <form onSubmit={onsubmit} autoComplete="off">
             <p className='logo'>tu<b>manga</b><i>online</i></p>
             <p className='acceder'>Acceder</p>
             <Link to={Routers.home}>Ir a Lector Manga</Link>

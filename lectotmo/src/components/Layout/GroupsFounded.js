@@ -1,5 +1,5 @@
-import { Groups } from "../data/Groups";
-import Card from "./Cards/Card";
+import { Groups } from "../../data/Groups";
+import Card from "../Cards/Card";
 const GroupsFounded = () => {
   return (
     <main className="main-founded">

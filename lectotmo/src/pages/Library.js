@@ -3,7 +3,7 @@ import Header from "../components/Layout/Header";
 import SearchAdvanced from "../components/SearchAdvanced/SearchAdvanced";
 import TypeFilter from "../components/SearchAdvanced/TypeFilter";
 import FilterSearch from "../components/SearchAdvanced/FilterSearch";
-import MangasFounded from "../components/MangasFounded";
+import MangasFounded from "../components/Layout/MangasFounded";
 import Footer from "../components/Layout/Footer";
 import ListGenders from "../components/SearchAdvanced/ListGenders";
 

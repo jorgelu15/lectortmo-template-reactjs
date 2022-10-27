@@ -1,5 +1,5 @@
-import Card from "./Cards/Card";
-import { Mangas } from "../data/Mangas";
+import Card from "../Cards/Card";
+import { Mangas } from "../../data/Mangas";
 
 const Main = () => {
   return (
