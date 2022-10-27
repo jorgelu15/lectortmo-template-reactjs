@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import routers from "../../helper/Routers";
 import { useOrder } from "../../hooks/useOrder";
 
 const ListChapters = (props) => {
@@ -45,10 +47,10 @@ const ListChapters = (props) => {
         </div>
         <div className="chapters">
           {caps.chapters.map((chapter, idx) => (
-            <a className="chapter" key={idx}>
+            <Link to={routers.read} className="chapter" key={idx}>
               <p>Capítulo: {chapter.name}</p>
               <p>Fecha de publicacion: {chapter.datePost}</p>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

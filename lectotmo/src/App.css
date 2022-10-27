@@ -962,6 +962,8 @@ select {
   background-color: var(--cover-bg);
   transition: 0.3s ease;
   cursor: pointer;
+  color: white;
+  text-decoration: none;
 }
 
 .chapter:hover {

@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import routers from "../../helper/Routers";
 
 const ControlsPages = () => {
   return (
     <div className="controls-pages">
       <nav className="navbar">
         <div className="main-menu">
-          <Link>
+          <Link to={routers.home}>
             tu<b>manga</b>
             <i>online</i>
           </Link>
