@@ -40,7 +40,6 @@ const SignIn = () => {
                 onChange={onchange}
               />
             </div>
-
             <div className='input'>
               <label htmlFor='password'>Contraseña</label>
               <input

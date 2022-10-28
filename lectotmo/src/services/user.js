@@ -1,12 +1,12 @@
 const ENDPOINT = "http://localhost:4000";
 
-export default function auth({ email, password }) {
-  return fetch(`${ENDPOINT}/auth`, {
+export default function user({ name, email, password }) {
+  return fetch(`${ENDPOINT}/user`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
     },
-    body: JSON.stringify({ email, password }),
+    body: JSON.stringify({ name, email, password }),
   })
     .then((res) => {
       if (!res.ok) throw new Error("Response is not ok");
