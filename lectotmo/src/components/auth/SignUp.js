@@ -7,17 +7,16 @@ import useUser from "../../hooks/useUser";
 import Alert from "../Layout/Alert";
 
 const SignUp = () => {
-  const { msg, setmsg } = useState('');
   const { alert, setAlert } = useAlert();
-  const { hasLoginError } = useUser();
+  const { isLoginLoading, codeError, register } = useUser();
   const [datos, setDatos] = useState({
     name: "",
-    mail: "",
+    email: "",
     password: "",
     confirmacion: "",
   });
 
-  const { name, mail, password, confirmacion } = datos;
+  const { name, email, password, confirmacion } = datos;
 
   const onchange = (e) => {
     setDatos({
@@ -28,20 +27,17 @@ const SignUp = () => {
 
   const onsubmit = (e) => {
     e.preventDefault();
-    if (mail.trim() === "" || name.trim() === "" || password.trim() === "") {
+    if (email.trim() === "" || name.trim() === "" || password.trim() === "") {
       setAlert(true);
-      setmsg("Todos los campos son obligatorios");
     }
-    if (password.trim() !== confirmacion.trim()) {
-      setAlert(true);
-      setmsg("Las contraseñas ingresadas no coinciden");
-    }
+
+    register({ name, email, password });
   };
   return (
     <>
       <div className="content-login">
         <div className="content-form">
-          <form onSubmit={onsubmit}>
+          <form onSubmit={onsubmit} autoComplete="off">
             <p className="logo">
               tu<b>manga</b>
               <i>online</i>
@@ -61,18 +57,18 @@ const SignUp = () => {
             </div>
 
             <div className="input">
-              <label htmlFor="mail">Email</label>
+              <label htmlFor="email">Eemail</label>
               <input
-                type="mail"
-                name="mail"
-                id="mail"
+                type="email"
+                name="email"
+                id="email"
                 placeholder="Correo electronico"
-                value={mail}
+                value={email}
                 onChange={onchange}
               />
             </div>
 
-            <div class="contra">
+            <div className="contra">
               <div className="input">
                 <label htmlFor="password">Contraseña</label>
                 <input
@@ -97,7 +93,7 @@ const SignUp = () => {
               </div>
             </div>
             <p>
-              Usa 8 o más caracteres con una combinación de letras, números y
+              Usa 6 o más caracteres con una combinación de letras, números y
               símbolos
             </p>
             <div className="link-footer">
@@ -106,8 +102,14 @@ const SignUp = () => {
               </Link>
               <input type="submit" value="Crear" />
             </div>
-            {alert && <Alert msg={msg} />}
-            {hasLoginError && <Alert msg={msg} />}
+            {alert && <Alert msg={"Todos los campos son obligatorios"} />}
+            {isLoginLoading && <Alert msg={"Validando credenciales..."} />}
+            {codeError === 400 && (
+              <Alert msg={"El email ya está conectado a otra cuenta"} />
+            )}
+            {codeError === 200 && (
+              <Alert msg={"El usuario fue creado exitosamente"} />
+            )}
           </form>
         </div>
       </div>

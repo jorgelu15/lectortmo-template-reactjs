@@ -4,7 +4,7 @@ import userService from "../services/user";
 
 export default function useUser() {
   const { jwt, setJWT } = useContext(Context);
-  const [state, setState] = useState({ loading: false, error: false });
+  const [state, setState] = useState({ loading: false, error: false, codeError: null });
 
   const register = useCallback(
     ({ name, email, password }) => {
@@ -12,12 +12,12 @@ export default function useUser() {
       userService({ name, email, password })
         .then((jwt) => {
           window.sessionStorage.setItem("jwt", jwt);
-          setState({ loading: false, error: false });
+          setState({ loading: false, error: false, codeError: 200 });
           setJWT(jwt);
         })
         .catch((err) => {
           window.sessionStorage.removeItem("jwt");
-          setState({ loading: false, error: true });
+          setState({ loading: false, error: true, codeError: 400 });
           console.error(err);
         });
     },
@@ -33,6 +33,7 @@ export default function useUser() {
     isLogged: Boolean(jwt),
     isLoginLoading: state.loading,
     hasLoginError: state.error,
+    codeError: state.codeError,
     register,
     logout,
   };
